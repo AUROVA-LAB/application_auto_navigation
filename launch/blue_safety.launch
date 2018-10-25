@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+
+  <include file="$(find robot_blue)/launch/start_all_nodes.launch" />
+
+  <include file="$(find velocity_recommender)/launch/start_all_reactives.launch" />
+
+  <node type="rviz" name="rviz" pkg="rviz" args="-d $(find application_navigation)/rviz/blue_safety.rviz" />
+
+</launch>
