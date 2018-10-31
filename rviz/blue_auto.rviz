@@ -5,6 +5,7 @@ Panels:
     Property Tree Widget:
       Expanded:
         - /Odometry1/Shape1
+        - /Pose1/Status1
       Splitter Ratio: 0.53591162
     Tree Height: 690
   - Class: rviz/Selection
@@ -164,7 +165,7 @@ Visualization Manager:
       Max Color: 255; 255; 255
       Max Intensity: 100
       Min Color: 0; 0; 0
-      Min Intensity: 2
+      Min Intensity: 3
       Name: LaserScan
       Position Transformer: XYZ
       Queue Size: 0
@@ -176,6 +177,21 @@ Visualization Manager:
       Unreliable: false
       Use Fixed Frame: true
       Use rainbow: true
+      Value: true
+    - Alpha: 1
+      Axes Length: 1
+      Axes Radius: 0.100000001
+      Class: rviz/Pose
+      Color: 255; 255; 0
+      Enabled: true
+      Head Length: 0.300000012
+      Head Radius: 0.100000001
+      Name: Pose
+      Shaft Length: 1
+      Shaft Radius: 0.0500000007
+      Shape: Axes
+      Topic: /move_base_simple/goal
+      Unreliable: false
       Value: true
   Enabled: true
   Global Options:
@@ -201,7 +217,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 14.0225773
+      Distance: 13.1376724
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
@@ -216,10 +232,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.45479697
+      Pitch: 0.35479784
       Target Frame: base_link
       Value: Orbit (rviz)
-      Yaw: 2.4035964
+      Yaw: 2.2986052
     Saved: ~
 Window Geometry:
   Displays:
