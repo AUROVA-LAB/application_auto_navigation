@@ -1,0 +1,9 @@
+  
+#-global variable
+use_sim_time: false
+
+#-variables for ackermann_to_odom node
+odom_in_tf: true
+scan_in_tf: false
+frame_id: ""
+child_id: ""
