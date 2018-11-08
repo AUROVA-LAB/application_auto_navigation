@@ -7,6 +7,8 @@
   <include file="$(find robot_blue)/launch/start_indoor_nodes.launch" />
   <include file="$(find velocity_recommender)/launch/start_all_reactives.launch" />
   <include file="$(find ackermann_to_odom)/launch/start_odometry.launch" />
+  
+  <node name="path_planning_demo" pkg="path_planning_demo" type="path_planning_demo" output="screen" />
 
   <node name="control_demo" pkg="control_demo" type="control_demo" output="screen" >
     <!-- select your pose node -->
