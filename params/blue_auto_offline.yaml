@@ -13,10 +13,7 @@ time_out_wait_goal: 0.8
 
 #-planning variables
 mode_path: 1
-frame_id_markers: "/odom"
-path_file_links: "/home/mice85/aurova-lab/aurova_ws/src/aurova_planning/path_planning_demo/src/trajectories/zlinks_sin.graph"
-path_file_nodes: "/home/mice85/aurova-lab/aurova_ws/src/aurova_planning/path_planning_demo/src/trajectories/znodes_sin.graph"
-path_file_goals: "/home/mice85/aurova-lab/aurova_ws/src/aurova_planning/path_planning_demo/src/trajectories/zgoals_sin.graph"
-#path_file_links: "/home/mice85/aurova-lab/aurova_ws/src/aurova_planning/path_planning_demo/src/trajectories/zlinks.graph"
-#path_file_nodes: "/home/mice85/aurova-lab/aurova_ws/src/aurova_planning/path_planning_demo/src/trajectories/znodes.graph"
-#path_file_goals: "/home/mice85/aurova-lab/aurova_ws/src/aurova_planning/path_planning_demo/src/trajectories/zgoals.graph"
+frame_id_markers: "/map"
+path_file_links: "/home/mice85/aurova-lab/aurova_ws/src/aurova_planning/path_planning_demo/src/trajectories/zlinks.graph"
+path_file_nodes: "/home/mice85/aurova-lab/aurova_ws/src/aurova_planning/path_planning_demo/src/trajectories/znodes.graph"
+path_file_goals: "/home/mice85/aurova-lab/aurova_ws/src/aurova_planning/path_planning_demo/src/trajectories/zgoals.graph"

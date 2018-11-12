@@ -1,4 +1,5 @@
 #gitignore
 scripts/generate_trajectory/*.graph
 scripts/generate_trajectory/*.csv
+scripts/generate_trajectory/*.data
 

@@ -10,9 +10,9 @@ data = textscan(fileID, '%s', 'Delimiter', ' ', 'MultipleDelimsAsOne',1);
 fclose(fileID);
 
 %Extracting latitude, longitude and altitude
-FIELDS_PER_TOPIC = 121;
-x_index = 17;
-y_index = 19;
+FIELDS_PER_TOPIC = 66;
+x_index = 15;
+y_index = 17;
 z_index = 28;
 w_index = 30;
 
@@ -33,6 +33,6 @@ end
 % [yaw, pitch, roll] = quat2angle([0 0 z_pose w_pose]);
 
 %Writing the data
-dlmwrite(output_filename_x, x_pose, 'delimiter',',','-append');
-dlmwrite(output_filename_y, y_pose,'delimiter',',','-append');
-plot(x_pose, y_pose)
+dlmwrite(output_filename_x, x_pose(1:1545), 'delimiter',',','-append');
+dlmwrite(output_filename_y, y_pose(1:1545),'delimiter',',','-append');
+plot(x_pose(1:1545), y_pose(1:1545))
