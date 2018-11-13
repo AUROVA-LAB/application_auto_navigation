@@ -10,6 +10,7 @@ child_id: ""
 
 #-control variables
 time_out_wait_goal: 0.8
+error_d_sat: 5.0
 
 #-planning variables
 mode_path: 1

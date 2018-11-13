@@ -4,6 +4,8 @@ SAVE_FILE = 1;
 % get entire trajectory
 trajectory_x  = csvread('trajectory_x.csv');
 trajectory_y  = csvread('trajectory_y.csv');
+trajectory_x  = trajectory_x(1:1540);
+trajectory_y  = trajectory_y(1:1540);
 output_filename_nodes = 'znodes.graph';
 output_filename_links    = 'zlinks.graph';
 output_filename_goals  = 'zgoals.graph';
@@ -72,7 +74,7 @@ end
 %--------------------------------------------------------------------------------------------------------------------
 % define the links of grah-trajectory here
 %--------------------------------------------------------------------------------------------------------------------
-jump_in_meters = 3; %this is the parameter for subsampling
+jump_in_meters = 0.5; %this is the parameter for subsampling
 
 num_inks = 5;
 if SAVE_FILE
@@ -118,7 +120,7 @@ end
 
 id_link = [5 1];
 index_init = 1451;
-index_end = 1545;
+index_end = 1540;
 [pointsx_in_link, pointsy_in_link, n_points] = subsampling_traject(trajectory_x(index_init:index_end), trajectory_y(index_init:index_end), jump_in_meters);
 if SAVE_FILE
     file_data = [id_link n_points pointsx_in_link pointsy_in_link];
