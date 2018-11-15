@@ -74,7 +74,7 @@ end
 %--------------------------------------------------------------------------------------------------------------------
 % define the links of grah-trajectory here
 %--------------------------------------------------------------------------------------------------------------------
-jump_in_meters = 0.5; %this is the parameter for subsampling
+jump_in_meters = 2; %this is the parameter for subsampling
 
 num_inks = 5;
 if SAVE_FILE
