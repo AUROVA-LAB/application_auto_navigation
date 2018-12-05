@@ -1,12 +1,3 @@
-  
-#-global variable
-use_sim_time: true
-
-#-variables for ackermann_to_odom node
-odom_in_tf: true
-scan_in_tf: false
-frame_id: ""
-child_id: ""
 
 #-control variables
 time_out_wait_goal: 0.8
@@ -15,6 +6,6 @@ error_d_sat: 5.0
 #-planning variables
 mode_path: 1
 frame_id_markers: "/map"
-path_file_links: "/home/mice85/aurova-lab/aurova_ws/src/aurova_planning/path_planning_demo/src/trajectories/zlinks.graph"
-path_file_nodes: "/home/mice85/aurova-lab/aurova_ws/src/aurova_planning/path_planning_demo/src/trajectories/znodes.graph"
-path_file_goals: "/home/mice85/aurova-lab/aurova_ws/src/aurova_planning/path_planning_demo/src/trajectories/zgoals.graph"
+path_file_links: "/home/mice85/aurova-lab/aurova_ws/src/aurova_planning/path_planning_demo/src/trajectories/zlinks_campus.graph"
+path_file_nodes: "/home/mice85/aurova-lab/aurova_ws/src/aurova_planning/path_planning_demo/src/trajectories/znodes_campus.graph"
+path_file_goals: "/home/mice85/aurova-lab/aurova_ws/src/aurova_planning/path_planning_demo/src/trajectories/zgoals_campus.graph"
