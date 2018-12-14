@@ -2,13 +2,13 @@
 SAVE_FILE = 1;
 
 % get entire trajectory
-trajectory_x  = csvread('trajectory_x.csv');
-trajectory_y  = csvread('trajectory_y.csv');
-trajectory_x  = trajectory_x(1:1540);
-trajectory_y  = trajectory_y(1:1540);
-output_filename_nodes = 'znodes.graph';
-output_filename_links    = 'zlinks.graph';
-output_filename_goals  = 'zgoals.graph';
+trajectory_x  = csvread('inputs/exp_09_ekf_x.csv');
+trajectory_y  = csvread('inputs/exp_09_ekf_y.csv');
+trajectory_x  = trajectory_x(7:end);
+trajectory_y  = trajectory_y(7:end);
+output_filename_nodes = 'outputs/znodes_campus_outmap1.graph';
+output_filename_links    = 'outputs/zlinks_campus_outmap1.graph';
+output_filename_goals  = 'outputs/zgoals_campus_outmap1.graph';
 
 %--------------------------------------------------------------------------------------------------------------------
 % define the nodes of grah-trajectory here
@@ -20,8 +20,8 @@ if SAVE_FILE
 end
 
 id_node = 1;
-pose_x_node = 68.94; % index 1
-pose_y_node = 80.86;
+pose_x_node = 59.82; % index 1
+pose_y_node = 0.83;
 num_nodes_neighbours = 2;
 id_nodes_neighbours = [2 5];
 if SAVE_FILE
@@ -30,8 +30,8 @@ if SAVE_FILE
 end
 
 id_node = 2;
-pose_x_node = -23.66; % index 395
-pose_y_node = 74.46;
+pose_x_node = -31.72; % index 816
+pose_y_node = -3.71;
 num_nodes_neighbours = 2;
 id_nodes_neighbours = [1 3];
 if SAVE_FILE
@@ -40,8 +40,8 @@ if SAVE_FILE
 end
 
 id_node = 3; 
-pose_x_node = -13.78; % index 710
-pose_y_node = 2.98;
+pose_x_node = -30.66; % index 1343
+pose_y_node = -63.82;
 num_nodes_neighbours = 2;
 id_nodes_neighbours = [2 4];
 if SAVE_FILE
@@ -50,8 +50,8 @@ if SAVE_FILE
 end
 
 id_node = 4;
-pose_x_node = 93.22; % index 1160
-pose_y_node = 9.18;
+pose_x_node = 155.7; % index 3402
+pose_y_node = -139.8;
 num_nodes_neighbours = 2;
 id_nodes_neighbours = [3 5];
 if SAVE_FILE
@@ -60,8 +60,8 @@ if SAVE_FILE
 end
 
 id_node = 5;
-pose_x_node = 90.04; % index 1451
-pose_y_node = 81.03;
+pose_x_node = 156.0; % index 4458
+pose_y_node = -4.33;
 num_nodes_neighbours = 2;
 id_nodes_neighbours = [1 4];
 if SAVE_FILE
@@ -84,7 +84,7 @@ end
 
 id_link = [1 2];
 index_init = 1;
-index_end = 395;
+index_end = 816;
 [pointsx_in_link, pointsy_in_link, n_points] = subsampling_traject(trajectory_x(index_init:index_end), trajectory_y(index_init:index_end), jump_in_meters);
 if SAVE_FILE
     file_data = [id_link n_points pointsx_in_link pointsy_in_link];
@@ -92,8 +92,8 @@ if SAVE_FILE
 end
 
 id_link = [2 3];
-index_init = 395;
-index_end = 710;
+index_init = 816;
+index_end = 1343;
 [pointsx_in_link, pointsy_in_link, n_points] = subsampling_traject(trajectory_x(index_init:index_end), trajectory_y(index_init:index_end), jump_in_meters);
 if SAVE_FILE
     file_data = [id_link n_points pointsx_in_link pointsy_in_link];
@@ -101,8 +101,8 @@ if SAVE_FILE
 end
 
 id_link = [3 4];
-index_init = 710;
-index_end = 1160;
+index_init = 1343;
+index_end = 3402;
 [pointsx_in_link, pointsy_in_link, n_points] = subsampling_traject(trajectory_x(index_init:index_end), trajectory_y(index_init:index_end), jump_in_meters);
 if SAVE_FILE
     file_data = [id_link n_points pointsx_in_link pointsy_in_link];
@@ -110,8 +110,8 @@ if SAVE_FILE
 end
 
 id_link = [4 5];
-index_init = 1160;
-index_end = 1451;
+index_init = 3402;
+index_end = 4458;
 [pointsx_in_link, pointsy_in_link, n_points] = subsampling_traject(trajectory_x(index_init:index_end), trajectory_y(index_init:index_end), jump_in_meters);
 if SAVE_FILE
     file_data = [id_link n_points pointsx_in_link pointsy_in_link];
@@ -119,8 +119,8 @@ if SAVE_FILE
 end
 
 id_link = [5 1];
-index_init = 1451;
-index_end = 1540;
+index_init = 4458;
+index_end = length(trajectory_x);
 [pointsx_in_link, pointsy_in_link, n_points] = subsampling_traject(trajectory_x(index_init:index_end), trajectory_y(index_init:index_end), jump_in_meters);
 if SAVE_FILE
     file_data = [id_link n_points pointsx_in_link pointsy_in_link];

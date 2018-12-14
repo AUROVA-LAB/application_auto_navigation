@@ -1,8 +1,8 @@
 %Correct survey in error using google maps
 
-input_filename    = 'trajectory.data';
-output_filename_x = 'trajectory_x.csv';
-output_filename_y = 'trajectory_y.csv';
+input_filename    = 'inputs/exp_09_ekf.data';
+output_filename_x = 'inputs/exp_09_ekf_x.csv';
+output_filename_y = 'inputs/exp_09_ekf_y.csv';
 
 %Open rostopic
 fileID = fopen(input_filename,'r');
@@ -33,6 +33,6 @@ end
 % [yaw, pitch, roll] = quat2angle([0 0 z_pose w_pose]);
 
 %Writing the data
-dlmwrite(output_filename_x, x_pose(1:1545), 'delimiter',',','-append');
-dlmwrite(output_filename_y, y_pose(1:1545),'delimiter',',','-append');
-plot(x_pose(1:1545), y_pose(1:1545))
+dlmwrite(output_filename_x, x_pose, 'delimiter',',','-append');
+dlmwrite(output_filename_y, y_pose,'delimiter',',','-append');
+plot(x_pose, y_pose)

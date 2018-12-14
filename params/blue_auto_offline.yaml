@@ -6,6 +6,6 @@ error_d_sat: 5.0
 #-planning variables
 mode_path: 1
 frame_id_markers: "/map"
-path_file_links: "/home/mice85/aurova-lab/aurova_ws/src/aurova_planning/path_planning_demo/src/trajectories/zlinks_campus.graph"
-path_file_nodes: "/home/mice85/aurova-lab/aurova_ws/src/aurova_planning/path_planning_demo/src/trajectories/znodes_campus.graph"
-path_file_goals: "/home/mice85/aurova-lab/aurova_ws/src/aurova_planning/path_planning_demo/src/trajectories/zgoals_campus.graph"
+path_file_links: "/home/mice85/aurova-lab/aurova_ws/src/aurova_planning/path_planning_demo/src/trajectories/zlinks_campus_outmap1.graph"
+path_file_nodes: "/home/mice85/aurova-lab/aurova_ws/src/aurova_planning/path_planning_demo/src/trajectories/znodes_campus_outmap1.graph"
+path_file_goals: "/home/mice85/aurova-lab/aurova_ws/src/aurova_planning/path_planning_demo/src/trajectories/zgoals_campus_outmap1.graph"

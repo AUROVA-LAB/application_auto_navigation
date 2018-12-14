@@ -2,4 +2,10 @@
 scripts/generate_trajectory/*.graph
 scripts/generate_trajectory/*.csv
 scripts/generate_trajectory/*.data
+scripts/generate_trajectory/inputs/*.graph
+scripts/generate_trajectory/inputs/*.csv
+scripts/generate_trajectory/inputs/*.data
+scripts/generate_trajectory/outputs/*.graph
+scripts/generate_trajectory/outputs/*.csv
+scripts/generate_trajectory/outputs/*.data
 
