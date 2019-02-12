@@ -7,7 +7,7 @@
 
   <node name="control_demo" pkg="control_demo" type="control_demo" output="screen" >
     <!-- select your pose node -->
-    <remap from="amcl_pose" to="initialpose_plot"/>
+    <!-- <remap from="amcl_pose" to="initialpose_plot"/> -->
     <rosparam command="load" file="$(find robot_blue)/params/sscontrol_params.yaml" />
   </node>
   
