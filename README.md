@@ -1,4 +1,4 @@
-# application_auto_navigation
+# application_navigation
 This package contains an application consisting of different launch files that execute diferent navigation algorithms using [BLUE robot](https://github.com/AUROVA-LAB/robot_blue) and nodes for adapt sensor data. Next we describe one example of how to run a navigation applications. 
 
 ### AMCL based navigation:
