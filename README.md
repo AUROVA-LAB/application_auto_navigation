@@ -4,7 +4,7 @@ This package contains an application consisting of different launch files that e
 ### AMCL based navigation:
 **Dependences:** All the dependences shown in the first [example](https://github.com/AUROVA-LAB/application_localization) of localization application, [aurova_planning](https://github.com/AUROVA-LAB/aurova_planning), and [aurova_control](https://github.com/AUROVA-LAB/aurova_control).
 * Step 1: execute first [example](https://github.com/AUROVA-LAB/application_localization) of localization application.
-* Step 2: run blue_auto_online.launch or blue_auto_offline.launch.
+* Step 2: run blue_auto_online.launch or blue_auto_offline.launch (you can load the trajectory path in .yaml file).
 
 ![](/documentation/exec_arch.png)
 
