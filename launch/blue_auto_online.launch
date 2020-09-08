@@ -3,7 +3,7 @@
  
   <rosparam command="load" file="$(find application_navigation)/params/blue_auto_online.yaml" />
 
-  <!-- <node name="path_planning_demo" pkg="path_planning_demo" type="path_planning_demo" output="screen" /> -->
+  <node name="path_planning_demo" pkg="path_planning_demo" type="path_planning_demo" output="screen" />
 
   <node name="control_demo" pkg="control_demo" type="control_demo" output="screen" >
     <!-- select your pose node -->
