@@ -3,10 +3,11 @@
 #-variables for global_planning node
 global_planning: {
   url_path: "/home/mice85/aurova-lab/aurova_ws/src/application_navigation/paths/proofs.osm",
+  frame_id: "/odom",
   var_x: 0.2,
   var_y: 0.2,
   var_z: 1000,
-  var_w: 1000,
+  var_w: 0.1,
   type_dist: "M",
   rad_reached: 1.0
 }
