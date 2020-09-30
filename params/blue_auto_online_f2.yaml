@@ -3,20 +3,20 @@
 global_planning: {
   url_path: "/home/mice85/aurova-lab/aurova_ws/src/application_navigation/paths/urban_01.osm",
   frame_id: "odom",
-  var_x: 0.5,
-  var_y: 0.05,
-  var_z: 1000000,
+  var_x: 0.2,
+  var_y: 0.01,
+  var_z: 0.01,
   var_w: 0.1,
-  type_dist: "M",
-  rad_reached: 1.0
+  type_dist: "E",
+  rad_reached: 2.0
 }
 
 #-variables for ackermann_control node
 ackermann_control: {
   max_angle: 25.0,
-  v_length: 1.08,
-  v_width: 1.25,
-  v_height: 0.5,
+  v_length: 1.05,
+  v_width: 1.672,
+  v_height: 0.797,
   t_length: 5.0,
   delta_time: 0.1,
   delta_angle: 1.0,
