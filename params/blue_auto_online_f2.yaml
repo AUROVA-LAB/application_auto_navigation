@@ -13,6 +13,7 @@ global_planning: {
 
 #-variables for ackermann_control node
 ackermann_control: {
+  frame_id: "map",
   max_angle: 25.0,
   v_length: 1.05,
   v_width: 1.672,
