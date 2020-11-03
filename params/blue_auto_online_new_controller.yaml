@@ -1,0 +1,35 @@
+
+#-variables for global_planning node
+global_planning: {
+  #url_path: "/home/mice85/aurova-lab/aurova_ws/src/application_navigation/paths/urban_01.osm",
+  url_path: "/home/idelpino/iri-lab/iri_ws/src/application_navigation/paths/urban_01.osm",
+  frame_id: "map",
+  var_x: 9.0, #0.2,
+  var_y: 1.0, #0.01,
+  var_z: 100.0, #0.01,
+  var_w: 0.1,
+  type_dist: "E",
+  rad_reached: 2.0
+}
+
+#-variables for ackermann_control node
+ackermann_control: {
+  frame_id: "map",
+  robot_abs_max_steering_angle: 25.0,
+  robot_wheelbase: 1.05,
+  robot_width: 0.797,
+  robot_length: 1.672, 
+  robot_height: 1.200,
+  robot_velodyne_z_pos: 1.100,
+  robot_lateral_safety_margin: 0.2,
+  robot_above_safety_margin: 0.2, 
+  robot_longitudinal_safety_margin: 0.2,
+  robot_max_speed: 1.3,
+  robot_min_speed: 0.6,
+
+  min_obstacle_height: 0.3,
+  temporal_horizon: 5.0,
+  delta_steering_deg: 1.0,
+  delta_time: 0.1,
+}
+
