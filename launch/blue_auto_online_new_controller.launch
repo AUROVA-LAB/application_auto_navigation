@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+ 
+  <rosparam command="load" file="$(find application_navigation)/params/blue_auto_online_new_controller.yaml" />
+
+  <node name="global_planning" pkg="global_planning" type="global_planning" output="screen" />
+
+  <node name="ackermann_control" pkg="ackermann_control" type="ackermann_control" output="screen" />
+ 
+</launch>
