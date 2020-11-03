@@ -5,6 +5,8 @@
 
   <node name="global_planning" pkg="global_planning" type="global_planning" output="screen" />
 
-  <node name="ackermann_control" pkg="ackermann_control" type="ackermann_control" output="screen" />
+  <node name="ackermann_control" pkg="ackermann_control" type="ackermann_control" output="screen" >
+    <remap from="/desired_ackermann_state" to="/ackermann_cmd" />
+  </node>
  
 </launch>
