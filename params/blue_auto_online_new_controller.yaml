@@ -4,12 +4,14 @@ global_planning: {
   #url_path: "/home/mice85/aurova-lab/aurova_ws/src/application_navigation/paths/urban_01.osm",
   url_path: "/home/idelpino/iri-lab/iri_ws/src/application_navigation/paths/urban_01.osm",
   frame_id: "map",
-  var_x: 9.0, #0.2,
-  var_y: 1.0, #0.01,
+  var_x: 0.2,
+  var_y: 0.2,
   var_z: 100.0, #0.01,
   var_w: 1000000.0, #0.1,
   type_dist: "E",
-  rad_reached: 3.0
+  rad_reached: 3.0,
+  control_var_x: 9.0,
+  control_var_y: 1.0
 }
 
 #-variables for ackermann_control node
@@ -37,9 +39,9 @@ ackermann_control: {
 ,
 
   safety_lateral_margin: 0.6,
-  safety_above_margin: 0.3, 
+  safety_above_margin: 0.7, 
   safety_longitudinal_margin: 0.2,
-  safety_min_obstacle_height: 0.7,
+  safety_min_obstacle_height: 0.5,
   
   prediction_temporal_horizon: 5.0,
   prediction_delta_time: 0.1,
