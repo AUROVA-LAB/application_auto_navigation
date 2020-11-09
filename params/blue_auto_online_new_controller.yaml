@@ -1,8 +1,8 @@
 
 #-variables for global_planning node
 global_planning: {
-  #url_path: "/home/mice85/aurova-lab/aurova_ws/src/application_navigation/paths/urban_01.osm",
-  url_path: "/home/idelpino/iri-lab/iri_ws/src/application_navigation/paths/urban_01.osm",
+  #url_path: "/home/mice85/aurova-lab/aurova_ws/src/application_navigation/paths/urban_01_nl_2.osm",
+  url_path: "/home/idelpino/iri-lab/iri_ws/src/application_navigation/paths/urban_01_nl_2.osm",
   frame_id: "map",
   var_x: 0.2,
   var_y: 0.2,
