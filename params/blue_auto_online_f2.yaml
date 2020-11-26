@@ -12,6 +12,24 @@ global_planning: {
   rad_reached: 2.0
 }
 
+#-variables for local_planning node
+lidar_configuration: {
+  max_elevation_angle: 15.0,
+  min_elevation_angle: -15.0,
+  max_azimuth_angle: 180.0,
+  min_azimuth_angle: -180.0,
+  grid_azimuth_angular_resolution: 0.2,
+  grid_elevation_angular_resolution: 2.0,
+  sensor_height: 0.6
+
+}
+filter_configuration: {
+  max_range: 100.0,
+  min_range: 0.0,
+  min_dot_product_for_ground: 0.6,
+  max_ground_elevation: 20.0 
+}
+
 #-variables for ackermann_control node
 ackermann_control: {
   frame_id: "map",
