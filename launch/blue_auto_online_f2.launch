@@ -10,4 +10,10 @@
   <node name="ackermann_control" pkg="ackermann_control" type="ackermann_control" output="screen" >
     <remap from="/desired_ackermann_state" to="/ackermann_cmd" />
   </node>
+  
+  <node name="plot_viewer" pkg="image_view" type="image_view">
+    <remap from="image" to="plot_pf_map" />
+    <param name="autosize" value="False" />
+  </node>
+  
 </launch>

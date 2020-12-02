@@ -13,6 +13,9 @@ global_planning: {
 }
 
 #-variables for local_planning node
+local_planning: {
+  frame_lidar: "/velodyne"
+}
 lidar_configuration: {
   max_elevation_angle: 105.0,
   min_elevation_angle: 75.0,
@@ -21,7 +24,6 @@ lidar_configuration: {
   grid_azimuth_angular_resolution: 0.2,
   grid_elevation_angular_resolution: 2.0,
   sensor_height: 0.76
-
 }
 filter_configuration: {
   max_range: 100.0,
