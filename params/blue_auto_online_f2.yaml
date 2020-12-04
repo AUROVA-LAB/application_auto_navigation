@@ -13,8 +13,18 @@ global_planning: {
 }
 
 #-variables for local_planning node
+pf_configuration: {
+  scale: 3,
+  wr: 1.0,
+  wa: 2.0,
+  ar: 0.2,
+  aa: 0.2
+}
 local_planning: {
-  frame_lidar: "/velodyne"
+  frame_id: "map",
+  frame_lidar: "velodyne",
+  save_map: true,
+  out_path_map: "/home/mice85/Escritorio/proofs/map"
 }
 lidar_configuration: {
   max_elevation_angle: 105.0,
