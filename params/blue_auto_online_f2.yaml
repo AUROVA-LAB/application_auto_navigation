@@ -14,7 +14,7 @@ global_planning: {
 
 #-variables for local_planning node
 pf_configuration: {
-  scale: 3,
+  scale: 2,
   wr: 1.0,
   wa: 2.0,
   ar: 0.2,
@@ -23,7 +23,7 @@ pf_configuration: {
 local_planning: {
   frame_id: "map",
   frame_lidar: "velodyne",
-  save_map: true,
+  save_map: false,
   out_path_map: "/home/mice85/Escritorio/proofs/map"
 }
 lidar_configuration: {
