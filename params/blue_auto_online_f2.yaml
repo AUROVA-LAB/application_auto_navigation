@@ -21,8 +21,8 @@ pf_configuration: {
   wa: 5.0,
   ar: 0.8,
   aa: 0.3,
-  rad_min: 1.5,
-  rad_max: 4.0
+  rad_min: 2.5,
+  rad_max: 4.5
 }
 local_planning: {
   frame_id: "map",
