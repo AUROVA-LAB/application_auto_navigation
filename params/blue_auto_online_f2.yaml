@@ -10,13 +10,13 @@ global_planning: {
   var_w: 0.1,
   type_dist: "E",
   rad_reached: 2.0,
-  flag_bypass: true
+  flag_bypass: false
 }
 
 #-variables for local_planning node
 pf_configuration: {
   threshold_grad: 50,
-  scale: 3,
+  scale: 6,
   wr: 1.0,
   wa: 5.0,
   ar: 0.8,
