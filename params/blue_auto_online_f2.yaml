@@ -61,6 +61,7 @@ ackermann_control: {
   v_max: 1.3,
   rad_reached: 1.5,
   flag_prop: true,
-  kp: 0.1
+  kp: 0.1,
+  margin_sec: 1.5
 }
 
