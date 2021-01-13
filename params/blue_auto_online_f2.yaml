@@ -1,7 +1,11 @@
 
 #-variables for global_planning node
 global_planning: {
-  url_path: "/home/mice85/aurova-lab/aurova_ws/src/application_navigation/paths/urban_01_nl_2.osm",
+  #url_path: "/home/mice85/aurova-lab/aurova_ws/src/application_navigation/paths/iuii_01.osm",
+  #url_path: "/home/aurova/iri-lab/iri_ws/src/application_navigation/paths/iuii_01.osm",
+  url_path: "/home/mice85/aurova-lab/aurova_ws/src/application_navigation/paths/campus_01.osm",
+  #url_path: "/home/aurova/iri-lab/iri_ws/src/application_navigation/paths/campus_01.osm",
+  #url_path: "/home/mice85/aurova-lab/aurova_ws/src/application_navigation/paths/urban_01_nl_2.osm",
   #url_path: "/home/aurova/iri-lab/iri_ws/src/application_navigation/paths/urban_01_nl_2.osm",
   frame_id: "map",
   var_x: 0.2,
@@ -10,7 +14,7 @@ global_planning: {
   var_w: 0.1,
   type_dist: "E",
   rad_reached: 4.0,
-  flag_bypass: true
+  flag_bypass: false
 }
 
 #-variables for local_planning node
