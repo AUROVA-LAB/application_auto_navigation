@@ -2,9 +2,9 @@
 #-variables for global_planning node
 global_planning: {
   url_path: "/home/mice85/aurova-lab/aurova_ws/src/application_navigation/paths/parque_01.osm",
-  #url_path: "/home/aurova/iri-lab/iri_ws/src/application_navigation/paths/iuii_01.osm",
+  #url_path: "/home/aurova/iri-lab/iri_ws/src/application_navigation/paths/parque_01.osm",
   #url_path: "/home/mice85/aurova-lab/aurova_ws/src/application_navigation/paths/patos_01.osm",
-  #url_path: "/home/aurova/iri-lab/iri_ws/src/application_navigation/paths/iuii_01.osm",
+  #url_path: "/home/aurova/iri-lab/iri_ws/src/application_navigation/paths/patos_01.osm",
   #url_path: "/home/mice85/aurova-lab/aurova_ws/src/application_navigation/paths/iuii_01.osm",
   #url_path: "/home/aurova/iri-lab/iri_ws/src/application_navigation/paths/iuii_01.osm",
   #url_path: "/home/mice85/aurova-lab/aurova_ws/src/application_navigation/paths/campus_01.osm",
@@ -51,7 +51,12 @@ filter_configuration: {
   max_range: 100.0,
   min_range: 0.0,
   min_dot_product_for_ground: 0.9,
-  max_ground_elevation: 0.0 
+  max_ground_elevation: 0.0,
+  a: 38.0,
+  b: -66.0,
+  c: -1.105,
+  variance: 0.1,
+  radious: 8.0
 }
 
 #-variables for ackermann_control node
