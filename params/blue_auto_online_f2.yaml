@@ -56,7 +56,8 @@ filter_configuration: {
   b: -66.0,
   c: -1.105,
   variance: 0.1,
-  radious: 8.0
+  radious: 8.0,
+  var_factor: 0.27
 }
 
 #-variables for ackermann_control node
