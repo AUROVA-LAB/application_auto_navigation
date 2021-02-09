@@ -68,7 +68,7 @@ ackermann_control: {
   v_width: 1.672,
   v_height: 0.797,
   t_length: 5.0,
-  delta_time: 0.1,
+  delta_time: 2.0,
   delta_angle: 1.0,
   t_velocity: 1.0,
   v_min: 0.6,
