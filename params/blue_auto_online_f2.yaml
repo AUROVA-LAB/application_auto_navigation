@@ -69,7 +69,7 @@ ackermann_control: {
   delta_time: 2.0,
   delta_angle: 1.0,
   t_velocity: 1.0,
-  v_min: 0.6,
+  v_min: 0.4,
   v_max: 1.3,
   rad_reached: 2.0,
   flag_prop: true,
