@@ -57,11 +57,11 @@ ackermann_control: {
   max_angle: 25.0,
   delta_angle: 1.0,
   v_length: 1.05,
-  delta_arc: 0.3,
+  delta_arc: 1.0,
   max_arc: 5.0,
   v_min: 0.4,
   v_max: 1.0,
   kp: 0.1, # if 1.0, proportional disactived
-  margin: 1.0 #from base_link
+  margin: 0.9 #from base_link
 }
 
