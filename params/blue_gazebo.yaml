@@ -35,7 +35,7 @@ lidar_configuration: {
   min_elevation_angle: 75.0,
   max_azimuth_angle: 360.0,
   min_azimuth_angle: 0.0,
-  grid_azimuth_angular_resolution: 0.8,
+  grid_azimuth_angular_resolution: 0.82,
   grid_elevation_angular_resolution: 2.0
 }
 filter_configuration: {
@@ -54,14 +54,14 @@ filter_configuration: {
 
 #-variables for ackermann_control node
 ackermann_control: {
-  max_angle: 25.0,
-  delta_angle: 1.0,
+  max_angle: 24.0,
+  delta_angle: 2.0,
   v_length: 1.05,
   delta_arc: 1.0,
-  max_arc: 5.0,
+  max_arc: 2.0,
   v_min: 0.4,
-  v_max: 1.0,
-  kp: 0.1, # if 1.0, proportional disactived
-  margin: 0.9 #from base_link
+  v_max: 0.8,
+  kp: 0.3, # if 1.0, proportional disactived
+  margin: 1.0 #from base_link
 }
 
