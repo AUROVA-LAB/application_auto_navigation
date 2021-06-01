@@ -8,4 +8,4 @@ scripts/generate_trajectory/inputs/*.data
 scripts/generate_trajectory/outputs/*.graph
 scripts/generate_trajectory/outputs/*.csv
 scripts/generate_trajectory/outputs/*.data
-
+output_files

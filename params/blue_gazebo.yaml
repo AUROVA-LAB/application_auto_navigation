@@ -12,7 +12,7 @@ global_planning: {
   url_path: "/home/mice85/aurova-lab/aurova_ws/src/application_navigation/paths/urban_01_nl_2.osm",
   #url_path: "/home/aurova/iri-lab/iri_ws/src/application_navigation/paths/urban_01_nl_2.osm",
   
-  url_file_out: "/home/mice85/aurova-lab/aurova_ws/src/application_navigation/paths/",
+  url_file_out: "/home/mice85/aurova-lab/aurova_ws/src/application_navigation/output_files/",
   
   closed_loop: [1, 2, 3, 4, 5, 6, 16, 15, 12, 11, 10, 9, 8, 7, 6, 16, 15, 12, 13, 14, 0],
   
@@ -30,8 +30,8 @@ global_planning: {
 local_planning: {
   frame_id: "map",
   frame_lidar: "velodyne",
-  save_map: false,
-  out_path_map: "/home/mice85/Escritorio/proofs/map"
+  save_data: false,
+  url_file_out: "/home/mice85/aurova-lab/aurova_ws/src/application_navigation/output_files/scans/"
 }
 lidar_configuration: {
   max_elevation_angle: 105.0,
